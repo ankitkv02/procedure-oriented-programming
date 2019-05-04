@@ -1,5 +1,5 @@
 #include<stdio.h>
-#define MAX 100
+#define MAX 100 
 
 void findSubArray(int arr[],int len,int sum);
 
