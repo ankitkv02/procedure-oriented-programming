@@ -33,27 +33,23 @@ int main(){
 
 void findSubArray(int arr[],int len,int sum){
 
-	int tempSum,i,startIndex,endIndex,found;
+	int tempSum,i,startIndex,endIndex;
 
 	for(i=0; i<len; i++){
 		startIndex = endIndex = i;
-		found = 0;
 		tempSum = 0;
 		while(endIndex < len){
 			tempSum += arr[endIndex];
 			if(tempSum == sum){
-				found = 1;
-				break;
-			}
-			endIndex++;
-		}
-		if(found == 1){
 			startIndex++;
 			endIndex++;
 //			printf("The sub-array resulting to a sum of %d ranges from position %d - %d \n",sum,startIndex,endIndex);
 			printf("%d %d \n",startIndex,endIndex);
 			return;
+			}
+			endIndex++;
 		}
+		
 	}
 
 //	printf("There is no sub-array which sums upto %d \n",sum);
