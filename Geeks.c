@@ -41,11 +41,11 @@ void findSubArray(int arr[],int len,int sum){
 		while(endIndex < len){
 			tempSum += arr[endIndex];
 			if(tempSum == sum){
-			startIndex++;
-			endIndex++;
-//			printf("The sub-array resulting to a sum of %d ranges from position %d - %d \n",sum,startIndex,endIndex);
-			printf("%d %d \n",startIndex,endIndex);
-			return;
+				startIndex++;
+				endIndex++;
+	//			printf("The sub-array resulting to a sum of %d ranges from position %d - %d \n",sum,startIndex,endIndex);
+				printf("%d %d \n",startIndex,endIndex);
+				return;
 			}
 			endIndex++;
 		}
