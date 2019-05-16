@@ -1,3 +1,6 @@
+/*Write a program in C to rearrange an array such that even index elements are smaller and
+odd index elements are greater than their next.*/
+
 #include<stdio.h>
 #define MXSZ 100
 

@@ -1,3 +1,6 @@
+/*Write a program in C to rearrange an array in such an order that– smallest, largest, 
+2nd smallest, 2nd largest and on.*/
+
 #include<stdio.h>
 #define MAX 100
 
