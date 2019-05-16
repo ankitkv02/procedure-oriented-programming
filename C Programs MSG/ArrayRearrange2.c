@@ -45,7 +45,7 @@ void arrayRearrange(int *brr,int len){
 
 	int i,j,swap;
 
-	for(i=0; i<len; ++i){
+	for(i=0; i<len-1; ++i){
 		j = i+1;
 		if(i & 1){
 			if(*(brr+i) < *(brr+j)){
